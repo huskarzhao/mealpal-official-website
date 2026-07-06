@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" fill="none">
+  <!-- Logo 图形 -->
+  <rect x="10" y="17" width="86" height="86" rx="10" stroke="#4B5CC4" stroke-width="3.5"/>
+  <line x1="53" y1="17" x2="53" y2="103" stroke="#4B5CC4" stroke-width="1" opacity="0.15"/>
+  <line x1="10" y1="60" x2="96" y2="60" stroke="#4B5CC4" stroke-width="1" opacity="0.15"/>
+  <path d="M31 17 Q53 -2 75 17" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="53" cy="2" r="7" fill="#1a1a1a"/>
+  <path d="M31 103 Q53 122 75 103" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="53" cy="118" r="7" fill="#1a1a1a"/>
+  <path d="M10 31 Q-8 53 10 75" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="-6" cy="53" r="7" fill="#1a1a1a"/>
+  <path d="M96 31 Q114 53 96 75" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="114" cy="53" r="7" fill="#1a1a1a"/>
+  <!-- 公司中文名 -->
+  <text x="130" y="65" font-family="'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="32" font-weight="700" fill="#1a1a1a" letter-spacing="2">饭搭子科技</text>
+  <!-- 英文名 -->
+  <text x="133" y="92" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4B5CC4" letter-spacing="3">FANDAZI TECHNOLOGY</text>
+</svg>
