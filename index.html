@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：SecBox密码保险箱、不云记账。AES-256-GCM加密，本地存储，零数据收集。">
-    <title>饭搭子科技 | SecBox · 不云记账 | iOS极简隐私工具</title>
+    <title data-i18n="page.title">饭搭子科技 | SecBox · 不云记账 | iOS极简隐私工具</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +19,17 @@
                 <img src="assets/logo-full.svg" alt="饭搭子科技" class="nav-logo-img" width="160" height="32">
             </a>
             <div class="nav-links">
-                <a href="#about">关于我们</a>
-                <a href="#apps">旗下产品</a>
-                <a href="#services">服务能力</a>
-                <a href="#contact">联系我们</a>
+                <a href="#about" data-i18n="nav.about">关于我们</a>
+                <a href="#apps" data-i18n="nav.apps">旗下产品</a>
+                <a href="#services" data-i18n="nav.services">服务能力</a>
+                <a href="#contact" data-i18n="nav.contact">联系我们</a>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="菜单">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav-actions">
+                <button class="lang-switch" id="langSwitch" aria-label="Switch language">EN</button>
+                <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -34,17 +37,17 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <div class="hero-badge">Beijing Fandazi Network Technology Co., Ltd.</div>
-            <h1 class="hero-title">
+            <h1 class="hero-title" data-i18n-html="hero.title">
                 把复杂留给代码<br>
                 <span class="hero-title-light">把轻松还给用户</span>
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-i18n-html="hero.subtitle">
                 北京饭搭子网络科技有限公司，专注 iOS 平台极简工具类 App 研发。<br>
                 所有产品<strong>本地离线存储、不收集用户数据</strong>，用买断制交付真正的安心。
             </p>
             <div class="hero-actions">
-                <a href="#apps" class="btn btn-primary">查看产品</a>
-                <a href="#about" class="btn btn-outline">了解我们</a>
+                <a href="#apps" class="btn btn-primary" data-i18n="hero.btn_apps">查看产品</a>
+                <a href="#about" class="btn btn-outline" data-i18n="hero.btn_about">了解我们</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -57,8 +60,8 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="section-header">
-            <h2 class="section-title">关于我们</h2>
-            <p class="section-desc">一家用「极简」定义产品的独立开发公司</p>
+            <h2 class="section-title" data-i18n="about.title">关于我们</h2>
+            <p class="section-desc" data-i18n="about.desc">一家用「极简」定义产品的独立开发公司</p>
         </div>
         <div class="about-grid">
             <div class="about-card">
@@ -70,8 +73,8 @@
                         <line x1="28" y1="10" x2="28" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <h3>品牌内核</h3>
-                <p>源于互联网从业者高压工作环境，以「同事结伴吃饭、轻松共处」为温暖原点。我们相信好工具不该制造焦虑 —— 它应该像一顿舒心的午餐，简单、直接、恰到好处。</p>
+                <h3 data-i18n="about.card1.title">品牌内核</h3>
+                <p data-i18n="about.card1.desc">源于互联网从业者高压工作环境，以「同事结伴吃饭、轻松共处」为温暖原点。我们相信好工具不该制造焦虑 —— 它应该像一顿舒心的午餐，简单、直接、恰到好处。</p>
             </div>
             <div class="about-card">
                 <div class="about-icon">
@@ -83,8 +86,8 @@
                         <line x1="17" y1="27" x2="28" y2="27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <h3>产品哲学</h3>
-                <p>所有产品遵循三大原则：<strong>纯本地离线</strong>存储，数据永不离开你的设备；<strong>一次性买断</strong>付费，没有订阅焦虑；<strong>零数据收集</strong>，隐私不是卖点而是底线。</p>
+                <h3 data-i18n="about.card2.title">产品哲学</h3>
+                <p data-i18n-html="about.card2.desc">所有产品遵循三大原则：<strong>纯本地离线</strong>存储，数据永不离开你的设备；<strong>一次性买断</strong>付费，没有订阅焦虑；<strong>零数据收集</strong>，隐私不是卖点而是底线。</p>
             </div>
             <div class="about-card">
                 <div class="about-icon">
@@ -93,8 +96,8 @@
                         <path d="M13 20 L18 24 L27 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h3>开发理念</h3>
-                <p>单人全栈独立开发，不依赖外部团队。从产品设计、iOS 原生开发、ASO 优化到全球发布全链路覆盖。低沟通成本、高交付质量、持续迭代，用最少资源做最扎实的产品。</p>
+                <h3 data-i18n="about.card3.title">开发理念</h3>
+                <p data-i18n="about.card3.desc">单人全栈独立开发，不依赖外部团队。从产品设计、iOS 原生开发、ASO 优化到全球发布全链路覆盖。低沟通成本、高交付质量、持续迭代，用最少资源做最扎实的产品。</p>
             </div>
         </div>
     </section>
@@ -104,19 +107,19 @@
         <div class="stats-inner">
             <div class="stat-item">
                 <span class="stat-number">100%</span>
-                <span class="stat-label">离线本地存储</span>
+                <span class="stat-label" data-i18n="stats.1.label">离线本地存储</span>
             </div>
             <div class="stat-item">
                 <span class="stat-number">0</span>
-                <span class="stat-label">服务器运维成本</span>
+                <span class="stat-label" data-i18n="stats.2.label">服务器运维成本</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number">全球</span>
-                <span class="stat-label">App Store 发布</span>
+                <span class="stat-number" data-i18n="stats.3.number">全球</span>
+                <span class="stat-label" data-i18n="stats.3.label">App Store 发布</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number">买断制</span>
-                <span class="stat-label">终身购买，无订阅</span>
+                <span class="stat-number" data-i18n="stats.4.number">买断制</span>
+                <span class="stat-label" data-i18n="stats.4.label">终身购买，无订阅</span>
             </div>
         </div>
     </section>
@@ -124,8 +127,8 @@
     <!-- Apps Showcase -->
     <section class="apps" id="apps">
         <div class="section-header">
-            <h2 class="section-title">旗下产品</h2>
-            <p class="section-desc">每一款都秉承极简、离线、安全的核心理念</p>
+            <h2 class="section-title" data-i18n="apps.title">旗下产品</h2>
+            <p class="section-desc" data-i18n="apps.desc">每一款都秉承极简、离线、安全的核心理念</p>
         </div>
 
         <div class="app-showcase">
@@ -135,12 +138,12 @@
                     <img src="assets/secbox-icon.jpg" alt="SecBox 图标" class="app-icon-img" width="96" height="96">
                 </div>
                 <div class="app-info">
-                    <h3 class="app-name">SecBox <span class="app-name-en">密码保险箱</span></h3>
-                    <p class="app-desc">零网络、零依赖的离线密码保险箱。AES-256-GCM 军事级加密，Face ID / Touch ID 生物识别解锁。内置密码生成器、分类管理、加密备份恢复。密码永不离开你的设备。</p>
+                    <h3 class="app-name">SecBox <span class="app-name-en" data-i18n="apps.secbox.subname">密码保险箱</span></h3>
+                    <p class="app-desc" data-i18n="apps.secbox.desc">零网络、零依赖的离线密码保险箱。AES-256-GCM 军事级加密，Face ID / Touch ID 生物识别解锁。内置密码生成器、分类管理、加密备份恢复。密码永不离开你的设备。</p>
                     <div class="app-tags">
-                        <span>AES-256-GCM</span><span>离线加密</span><span>Face ID</span><span>密码生成器</span><span>6语言</span>
+                        <span data-i18n="apps.secbox.tag1">AES-256-GCM</span><span data-i18n="apps.secbox.tag2">离线加密</span><span data-i18n="apps.secbox.tag3">Face ID</span><span data-i18n="apps.secbox.tag4">密码生成器</span><span data-i18n="apps.secbox.tag5">6语言</span>
                     </div>
-                    <a href="https://apps.apple.com/cn/app/secbox-%E5%AF%86%E7%A0%81%E4%BF%9D%E9%99%A9%E7%AE%B1/id6783623988" target="_blank" rel="noopener" class="app-link">App Store 下载 →</a>
+                    <a href="https://apps.apple.com/cn/app/secbox-%E5%AF%86%E7%A0%81%E4%BF%9D%E9%99%A9%E7%AE%B1/id6783623988" target="_blank" rel="noopener" class="app-link" data-i18n="apps.secbox.link">App Store 下载 →</a>
                 </div>
             </div>
 
@@ -150,12 +153,12 @@
                     <img src="assets/ledger-icon.jpg" alt="不云记账 图标" class="app-icon-img" width="96" height="96">
                 </div>
                 <div class="app-info">
-                    <h3 class="app-name">不云记账 <span class="app-name-en">Offline Ledger</span></h3>
-                    <p class="app-desc">极简离线记账工具。所有数据存储本地，无需注册、不上传任何信息。多账户管理、分类统计、报表导出，一次购买终身使用，真正属于你自己的账本。</p>
+                    <h3 class="app-name">不云记账 <span class="app-name-en" data-i18n="apps.ledger.subname">Offline Ledger</span></h3>
+                    <p class="app-desc" data-i18n="apps.ledger.desc">极简离线记账工具。所有数据存储本地，无需注册、不上传任何信息。多账户管理、分类统计、报表导出，一次购买终身使用，真正属于你自己的账本。</p>
                     <div class="app-tags">
-                        <span>离线记账</span><span>本地存储</span><span>买断制</span><span>无广告</span><span>多账户</span>
+                        <span data-i18n="apps.ledger.tag1">离线记账</span><span data-i18n="apps.ledger.tag2">本地存储</span><span data-i18n="apps.ledger.tag3">买断制</span><span data-i18n="apps.ledger.tag4">无广告</span><span data-i18n="apps.ledger.tag5">多账户</span>
                     </div>
-                    <a href="https://apps.apple.com/cn/app/%E4%B8%8D%E4%BA%91%E8%AE%B0%E8%B4%A6-%E7%A6%BB%E7%BA%BF%E6%9C%AC%E5%9C%B0%E8%B4%A6%E6%9C%AC/id6775724566" target="_blank" rel="noopener" class="app-link">App Store 下载 →</a>
+                    <a href="https://apps.apple.com/cn/app/%E4%B8%8D%E4%BA%91%E8%AE%B0%E8%B4%A6-%E7%A6%BB%E7%BA%BF%E6%9C%AC%E5%9C%B0%E8%B4%A6%E6%9C%AC/id6775724566" target="_blank" rel="noopener" class="app-link" data-i18n="apps.ledger.link">App Store 下载 →</a>
                 </div>
             </div>
         </div>
@@ -164,33 +167,33 @@
     <!-- Services -->
     <section class="services" id="services">
         <div class="section-header">
-            <h2 class="section-title">服务能力</h2>
-            <p class="section-desc">全链路 iOS 独立开发，从零到全球发布</p>
+            <h2 class="section-title" data-i18n="services.title">服务能力</h2>
+            <p class="section-desc" data-i18n="services.desc">全链路 iOS 独立开发，从零到全球发布</p>
         </div>
         <div class="services-grid">
             <div class="service-item">
-                <h4>iOS 原生开发</h4>
-                <p>Swift / SwiftUI / UIKit 全栈能力，支持 iOS 16+ 及最新系统特性适配。从交互原型到 App Store 上架，一站式交付。</p>
+                <h4 data-i18n="services.1.title">iOS 原生开发</h4>
+                <p data-i18n="services.1.desc">Swift / SwiftUI / UIKit 全栈能力，支持 iOS 16+ 及最新系统特性适配。从交互原型到 App Store 上架，一站式交付。</p>
             </div>
             <div class="service-item">
-                <h4>产品设计</h4>
-                <p>极简交互理念，黑白视觉风格。减少用户认知负担，让每个功能在 3 秒内被理解。不做功能堆砌，只做恰到好处。</p>
+                <h4 data-i18n="services.2.title">产品设计</h4>
+                <p data-i18n="services.2.desc">极简交互理念，黑白视觉风格。减少用户认知负担，让每个功能在 3 秒内被理解。不做功能堆砌，只做恰到好处。</p>
             </div>
             <div class="service-item">
-                <h4>ASO 优化</h4>
-                <p>关键词覆盖、标题/副标题优化、商店页面本地化（中/英）。自然流量增长策略，零付费投放，纯内容驱动。</p>
+                <h4 data-i18n="services.3.title">ASO 优化</h4>
+                <p data-i18n="services.3.desc">关键词覆盖、标题/副标题优化、商店页面本地化（中/英）。自然流量增长策略，零付费投放，纯内容驱动。</p>
             </div>
             <div class="service-item">
-                <h4>IAP 变现设计</h4>
-                <p>买断制 + 轻度订阅混合策略设计。合理定价、SKU 配置、审核合规，确保稳定通过 App Store 审核。</p>
+                <h4 data-i18n="services.4.title">IAP 变现设计</h4>
+                <p data-i18n="services.4.desc">买断制 + 轻度订阅混合策略设计。合理定价、SKU 配置、审核合规，确保稳定通过 App Store 审核。</p>
             </div>
             <div class="service-item">
-                <h4>多语言本地化</h4>
-                <p>App 内文本 + 商店页面双线本地化。覆盖中英日韩等核心市场，按语义而非字面翻译，确保各语言用户理解一致。</p>
+                <h4 data-i18n="services.5.title">多语言本地化</h4>
+                <p data-i18n="services.5.desc">App 内文本 + 商店页面双线本地化。覆盖中英日韩等核心市场，按语义而非字面翻译，确保各语言用户理解一致。</p>
             </div>
             <div class="service-item">
-                <h4>长期维护迭代</h4>
-                <p>持续适配新系统、修复问题、迭代功能。单人开发响应快，无繁冗流程，用户反馈直达开发者本人。</p>
+                <h4 data-i18n="services.6.title">长期维护迭代</h4>
+                <p data-i18n="services.6.desc">持续适配新系统、修复问题、迭代功能。单人开发响应快，无繁冗流程，用户反馈直达开发者本人。</p>
             </div>
         </div>
     </section>
@@ -198,26 +201,26 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <div class="section-header">
-            <h2 class="section-title">联系我们</h2>
-            <p class="section-desc">合作咨询、产品反馈，欢迎直接联系</p>
+            <h2 class="section-title" data-i18n="contact.title">联系我们</h2>
+            <p class="section-desc" data-i18n="contact.desc">合作咨询、产品反馈，欢迎直接联系</p>
         </div>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-item">
-                    <span class="contact-label">公司名称</span>
+                    <span class="contact-label" data-i18n="contact.label1">公司名称</span>
                     <span class="contact-value">北京饭搭子网络科技有限公司</span>
                 </div>
                 <div class="contact-item">
-                    <span class="contact-label">英文名称</span>
+                    <span class="contact-label" data-i18n="contact.label2">英文名称</span>
                     <span class="contact-value">Beijing Fandazi Network Technology Co., Ltd.</span>
                 </div>
                 <div class="contact-item">
-                    <span class="contact-label">联系邮箱</span>
+                    <span class="contact-label" data-i18n="contact.label3">联系邮箱</span>
                     <span class="contact-value"><a href="mailto:support@mealpal.cn">support@mealpal.cn</a></span>
                 </div>
                 <div class="contact-item">
-                    <span class="contact-label">App Store</span>
-                    <span class="contact-value"><a href="https://apps.apple.com" target="_blank" rel="noopener">查看全部应用 →</a></span>
+                    <span class="contact-label" data-i18n="contact.label4">App Store</span>
+                    <span class="contact-value"><a href="https://apps.apple.com" target="_blank" rel="noopener" data-i18n="contact.link">查看全部应用 →</a></span>
                 </div>
             </div>
             <div class="contact-visual">
@@ -240,10 +243,10 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <span class="footer-logo">饭搭子科技</span>
-                <span class="footer-tagline">把复杂留给代码，把轻松还给用户</span>
+                <span class="footer-tagline" data-i18n="footer.tagline">把复杂留给代码，把轻松还给用户</span>
             </div>
             <div class="footer-copy">
-                <p>&copy; 2026 北京饭搭子网络科技有限公司. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 北京饭搭子网络科技有限公司. All rights reserved.</p>
                 <p>ICP备案号：京ICP备XXXXXXXX号</p>
             </div>
         </div>

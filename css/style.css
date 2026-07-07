@@ -105,6 +105,34 @@ h1, h2, h3, h4 {
 
 .nav-links a:hover { color: var(--accent); }
 
+/* --- Nav Actions (Lang Switch + Toggle) --- */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lang-switch {
+    font-family: var(--font-en);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-600);
+    background: none;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 6px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.02em;
+    line-height: 1;
+}
+
+.lang-switch:hover {
+    border-color: var(--accent);
+    color: var(--accent-dark);
+    background: var(--accent-light);
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -661,4 +689,5 @@ section { scroll-margin-top: var(--nav-height); }
     .stats-inner { grid-template-columns: 1fr 1fr; gap: 8px; }
     .stat-number { font-size: 28px; }
     .section-title { font-size: 26px; }
+    .lang-switch { font-size: 11px; padding: 4px 10px; }
 }
