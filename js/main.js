@@ -7,7 +7,7 @@
 var I18N = {
     zh: {
         /* Page */
-        'page.title': '饭搭子科技 | SecBox · 不云记账 | iOS极简隐私工具',
+        'page.title': '饭搭子科技 | SecBox · 不云记账 · TickDay | iOS极简隐私工具',
 
         /* Nav */
         'nav.about':    '关于我们',
@@ -59,6 +59,16 @@ var I18N = {
         'apps.ledger.tag5':    '多账户',
         'apps.ledger.link':    'App Store 下载 →',
 
+        /* Apps - TickDay */
+        'apps.tickday.subname': '倒数日小组件',
+        'apps.tickday.desc':    '极简离线倒数日追踪工具。100% 本地存储，无需注册、不收集任何数据。支持桌面小组件、年度重复提醒、分类管理。免费开始最多 3 个倒数日，一次性购买解锁无限使用。',
+        'apps.tickday.tag1':    '桌面小组件',
+        'apps.tickday.tag2':    '离线倒数日',
+        'apps.tickday.tag3':    '本地存储',
+        'apps.tickday.tag4':    '买断制',
+        'apps.tickday.tag5':    '年度重复',
+        'apps.tickday.link':    'App Store 下载 →',
+
         /* Services */
         'services.title':      '服务能力',
         'services.desc':       '全链路 iOS 独立开发，从零到全球发布',
@@ -91,7 +101,7 @@ var I18N = {
 
     en: {
         /* Page */
-        'page.title': 'Fandazi Tech | SecBox · Offline Ledger | Minimalist iOS Tools',
+        'page.title': 'Fandazi Tech | SecBox · Offline Ledger · TickDay | Minimalist iOS Tools',
 
         /* Nav */
         'nav.about':    'About',
@@ -143,6 +153,16 @@ var I18N = {
         'apps.ledger.tag5':    'Multi-Account',
         'apps.ledger.link':    'Download on App Store →',
 
+        /* Apps - TickDay */
+        'apps.tickday.subname': 'Countdown Widget',
+        'apps.tickday.desc':    'Count the days that matter. Privately. A minimalist countdown tracker with 100% local storage — no account, no signup, no cloud. Home screen widgets, yearly repeat, and category management. Start free with up to 3 countdowns, unlock unlimited with a one-time purchase.',
+        'apps.tickday.tag1':    'Home Widget',
+        'apps.tickday.tag2':    'Offline Countdown',
+        'apps.tickday.tag3':    'Local Storage',
+        'apps.tickday.tag4':    'One-Time Purchase',
+        'apps.tickday.tag5':    'Yearly Repeat',
+        'apps.tickday.link':    'Download on App Store →',
+
         /* Services */
         'services.title':      'Our Services',
         'services.desc':       'Full-stack iOS independent development, from zero to global release',
@@ -176,8 +196,8 @@ var I18N = {
 
 /* Meta description for each language */
 var I18N_META = {
-    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：SecBox密码保险箱、不云记账。AES-256-GCM加密，本地存储，零数据收集。',
-    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: SecBox Password Vault, Offline Ledger. AES-256-GCM encryption, local storage, zero data collection.'
+    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：SecBox密码保险箱、不云记账、TickDay倒数日小组件。AES-256-GCM加密，本地存储，零数据收集。',
+    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: SecBox Password Vault, Offline Ledger, TickDay Countdown Widget. AES-256-GCM encryption, local storage, zero data collection.'
 };
 
 
