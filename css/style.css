@@ -87,6 +87,7 @@ h1, h2, h3, h4 {
     display: block;
     height: 28px;
     width: auto;
+    border-radius: 6px;
 }
 
 .nav-links {
@@ -228,6 +229,7 @@ h1, h2, h3, h4 {
     width: 100%;
     max-width: 280px;
     display: block;
+    border-radius: 28px;
 }
 
 /* --- Buttons --- */
