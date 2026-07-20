@@ -7,7 +7,7 @@
 var I18N = {
     zh: {
         /* Page */
-        'page.title': '饭搭子科技 | SecBox · 不云记账 · TickDay | iOS极简隐私工具',
+        'page.title': '饭搭子科技 | SecBox · 不云记账 · TickDay · 墨锁 | iOS极简隐私工具',
 
         /* Nav */
         'nav.about':    '关于我们',
@@ -69,6 +69,16 @@ var I18N = {
         'apps.tickday.tag5':    '年度重复',
         'apps.tickday.link':    'App Store 下载 →',
 
+        /* Apps - 墨锁 */
+        'apps.inklock.subname': '私密日记本',
+        'apps.inklock.desc':    '极简私密日记本。独创诱饵密码系统——设置两个独立密码，一个展示预设内容，真实密码解锁完整日记。所有数据纯本地离线存储，不收集任何数据。Georgia 衬线字体、可调字号行距、打字机模式光标居中，一次购买永久使用。',
+        'apps.inklock.tag1':    '诱饵密码',
+        'apps.inklock.tag2':    '离线日记',
+        'apps.inklock.tag3':    '本地存储',
+        'apps.inklock.tag4':    '买断制',
+        'apps.inklock.tag5':    '衬线字体',
+        'apps.inklock.link':    'App Store 下载 →',
+
         /* Services */
         'services.title':      '服务能力',
         'services.desc':       '全链路 iOS 独立开发，从零到全球发布',
@@ -101,7 +111,7 @@ var I18N = {
 
     en: {
         /* Page */
-        'page.title': 'Fandazi Tech | SecBox · Offline Ledger · TickDay | Minimalist iOS Tools',
+        'page.title': 'Fandazi Tech | SecBox · Offline Ledger · TickDay · InkLock | Minimalist iOS Tools',
 
         /* Nav */
         'nav.about':    'About',
@@ -163,6 +173,16 @@ var I18N = {
         'apps.tickday.tag5':    'Yearly Repeat',
         'apps.tickday.link':    'Download on App Store →',
 
+        /* Apps - InkLock */
+        'apps.inklock.subname': 'Private Diary',
+        'apps.inklock.desc':    'A minimalist private diary with a unique decoy password system — set two independent passwords, one reveals preset content while the real one unlocks your complete journal. All data stored locally offline with zero data collection. Georgia serif typography, adjustable font size & line spacing, typewriter-mode cursor centering. One-time purchase for lifetime use.',
+        'apps.inklock.tag1':    'Decoy Password',
+        'apps.inklock.tag2':    'Offline Diary',
+        'apps.inklock.tag3':    'Local Storage',
+        'apps.inklock.tag4':    'One-Time Purchase',
+        'apps.inklock.tag5':    'Serif Font',
+        'apps.inklock.link':    'Download on App Store →',
+
         /* Services */
         'services.title':      'Our Services',
         'services.desc':       'Full-stack iOS independent development, from zero to global release',
@@ -196,8 +216,8 @@ var I18N = {
 
 /* Meta description for each language */
 var I18N_META = {
-    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：SecBox密码保险箱、不云记账、TickDay倒数日小组件。AES-256-GCM加密，本地存储，零数据收集。',
-    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: SecBox Password Vault, Offline Ledger, TickDay Countdown Widget. AES-256-GCM encryption, local storage, zero data collection.'
+    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：SecBox密码保险箱、不云记账、TickDay倒数日小组件、墨锁私密日记本。AES-256-GCM加密，本地存储，零数据收集。',
+    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: SecBox Password Vault, Offline Ledger, TickDay Countdown Widget, InkLock Private Diary. AES-256-GCM encryption, local storage, zero data collection.'
 };
 
 
