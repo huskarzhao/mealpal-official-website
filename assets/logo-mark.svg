@@ -1,18 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- 中央方桌 - 靛蓝色 -->
-  <rect x="62" y="62" width="76" height="76" rx="8" stroke="#4B5CC4" stroke-width="3.5"/>
-  <line x1="100" y1="62" x2="100" y2="138" stroke="#4B5CC4" stroke-width="1" opacity="0.15"/>
-  <line x1="62" y1="100" x2="138" y2="100" stroke="#4B5CC4" stroke-width="1" opacity="0.15"/>
-  <!-- 上方人物 -->
-  <path d="M80 62 Q100 44 120 62" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="100" cy="48" r="6.5" fill="#1a1a1a"/>
-  <!-- 下方人物 -->
-  <path d="M80 138 Q100 156 120 138" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="100" cy="152" r="6.5" fill="#1a1a1a"/>
-  <!-- 左方人物 -->
-  <path d="M62 80 Q44 100 62 120" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="48" cy="100" r="6.5" fill="#1a1a1a"/>
-  <!-- 右方人物 -->
-  <path d="M138 80 Q156 100 138 120" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="152" cy="100" r="6.5" fill="#1a1a1a"/>
+<svg viewBox="0 0 1024 1024" width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#g)" />
+  <rect x="204.8" y="204.8" width="614.4" height="614.4" rx="79.872"
+    fill="#FFFFFF" fill-opacity="0.14"
+    stroke="#FFFFFF" stroke-width="22.528" stroke-opacity="0.3" />
+  <line x1="512" y1="227.328" x2="512" y2="796.672"
+    stroke="#FFFFFF" stroke-width="14.336" opacity="0.2" />
+  <line x1="227.328" y1="512" x2="796.672" y2="512"
+    stroke="#FFFFFF" stroke-width="14.336" opacity="0.2" />
+  <circle cx="512" cy="512" r="56.32" fill="#FFFFFF" opacity="0.18" />
+  <circle cx="512" cy="512" r="29.2864" fill="#FFFFFF" opacity="0.4" />
+  
+      <circle cx="512" cy="87.04" r="63.488" fill="#FFFFFF" />
+      <ellipse cx="512" cy="194.9696" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(180,512,194.9696)" />
+    
+      <circle cx="512" cy="936.96" r="63.488" fill="#FFFFFF" />
+      <ellipse cx="512" cy="829.0304000000001" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(0,512,829.0304000000001)" />
+    
+      <circle cx="87.04" cy="512" r="63.488" fill="#FFFFFF" />
+      <ellipse cx="194.9696" cy="512" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(90,194.9696,512)" />
+    
+      <circle cx="936.96" cy="512" r="63.488" fill="#FFFFFF" />
+      <ellipse cx="829.0304000000001" cy="512" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(270,829.0304000000001,512)" />
+    
 </svg>

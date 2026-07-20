@@ -1,18 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" fill="none">
-  <!-- Logo 图形 -->
-  <rect x="10" y="17" width="86" height="86" rx="10" stroke="#4B5CC4" stroke-width="3.5"/>
-  <line x1="53" y1="17" x2="53" y2="103" stroke="#4B5CC4" stroke-width="1" opacity="0.15"/>
-  <line x1="10" y1="60" x2="96" y2="60" stroke="#4B5CC4" stroke-width="1" opacity="0.15"/>
-  <path d="M31 17 Q53 -2 75 17" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="53" cy="2" r="7" fill="#1a1a1a"/>
-  <path d="M31 103 Q53 122 75 103" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="53" cy="118" r="7" fill="#1a1a1a"/>
-  <path d="M10 31 Q-8 53 10 75" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="-6" cy="53" r="7" fill="#1a1a1a"/>
-  <path d="M96 31 Q114 53 96 75" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="114" cy="53" r="7" fill="#1a1a1a"/>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo 图形背景 -->
+  <rect x="10" y="17" width="86" height="86" rx="16" fill="url(#g)" />
+
+  <!-- Logo 图形元素 - 缩放自 logo-mark.svg -->
+  <g transform="translate(10, 17) scale(0.084)">
+    <!-- 内部方形 -->
+    <rect x="204.8" y="204.8" width="614.4" height="614.4" rx="79.872"
+      fill="#FFFFFF" fill-opacity="0.14"
+      stroke="#FFFFFF" stroke-width="22.528" stroke-opacity="0.3" />
+    <!-- 十字线 -->
+    <line x1="512" y1="227.328" x2="512" y2="796.672"
+      stroke="#FFFFFF" stroke-width="14.336" opacity="0.2" />
+    <line x1="227.328" y1="512" x2="796.672" y2="512"
+      stroke="#FFFFFF" stroke-width="14.336" opacity="0.2" />
+    <!-- 中心圆 -->
+    <circle cx="512" cy="512" r="56.32" fill="#FFFFFF" opacity="0.18" />
+    <circle cx="512" cy="512" r="29.2864" fill="#FFFFFF" opacity="0.4" />
+    <!-- 上方人物 -->
+    <circle cx="512" cy="87.04" r="63.488" fill="#FFFFFF" />
+    <ellipse cx="512" cy="194.9696" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(180,512,194.9696)" />
+    <!-- 下方人物 -->
+    <circle cx="512" cy="936.96" r="63.488" fill="#FFFFFF" />
+    <ellipse cx="512" cy="829.0304000000001" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(0,512,829.0304000000001)" />
+    <!-- 左侧人物 -->
+    <circle cx="87.04" cy="512" r="63.488" fill="#FFFFFF" />
+    <ellipse cx="194.9696" cy="512" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(90,194.9696,512)" />
+    <!-- 右侧人物 -->
+    <circle cx="936.96" cy="512" r="63.488" fill="#FFFFFF" />
+    <ellipse cx="829.0304000000001" cy="512" rx="73.728" ry="36.864" fill="#FFFFFF" transform="rotate(270,829.0304000000001,512)" />
+  </g>
+
   <!-- 公司中文名 -->
   <text x="130" y="65" font-family="'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="32" font-weight="700" fill="#1a1a1a" letter-spacing="2">饭搭子科技</text>
+
   <!-- 英文名 -->
-  <text x="133" y="92" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4B5CC4" letter-spacing="3">FANDAZI TECHNOLOGY</text>
+  <text x="133" y="92" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0EA5E9" letter-spacing="3">FANDAZI TECHNOLOGY</text>
 </svg>
