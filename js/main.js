@@ -7,7 +7,7 @@
 var I18N = {
     zh: {
         /* Page */
-        'page.title': '饭搭子科技 | SecBox · 不云记账 · TickDay · 墨锁 | iOS极简隐私工具',
+        'page.title': '饭搭子科技 | 密码管理器 · 记账本 · 倒数日 · 私密日记 | iOS极简隐私工具',
 
         /* Nav */
         'nav.about':    '关于我们',
@@ -42,15 +42,15 @@ var I18N = {
         /* Apps */
         'apps.title':          '旗下产品',
         'apps.desc':           '每一款都秉承极简、离线、安全的核心理念',
-        'apps.secbox.subname': '密码保险箱',
-        'apps.secbox.desc':    '零网络、零依赖的离线密码保险箱。AES-256-GCM 军事级加密，Face ID / Touch ID 生物识别解锁。内置密码生成器、分类管理、加密备份恢复。密码永不离开你的设备。',
+        'apps.secbox.subname': 'AES-256本地保险箱，本地加密存储账号与证件',
+        'apps.secbox.desc':    '零网络、零依赖的离线密码保险箱。AES-256-GCM 军事级加密，Face ID / Touch ID 生物识别解锁。内置密码生成器、分类管理、加密备份恢复。免费版最多添加 10 条密码，Pro 版无限条 + 备份恢复。密码永不离开你的设备。',
         'apps.secbox.tag1':    'AES-256-GCM',
         'apps.secbox.tag2':    '离线加密',
         'apps.secbox.tag3':    'Face ID',
         'apps.secbox.tag4':    '密码生成器',
         'apps.secbox.tag5':    '6语言',
         'apps.secbox.link':    'App Store 下载 →',
-        'apps.ledger.subname': 'Offline Ledger',
+        'apps.ledger.subname': '不上传不注册一次买断永久用',
         'apps.ledger.desc':    '极简离线记账工具。所有数据存储本地，无需注册、不上传任何信息。多账户管理、分类统计、报表导出，一次购买终身使用，真正属于你自己的账本。',
         'apps.ledger.tag1':    '离线记账',
         'apps.ledger.tag2':    '本地存储',
@@ -60,7 +60,7 @@ var I18N = {
         'apps.ledger.link':    'App Store 下载 →',
 
         /* Apps - TickDay */
-        'apps.tickday.subname': '倒数日小组件',
+        'apps.tickday.subname': '极简纪念日提醒免费开始使用',
         'apps.tickday.desc':    '极简离线倒数日追踪工具。100% 本地存储，无需注册、不收集任何数据。支持桌面小组件、年度重复提醒、分类管理。免费开始最多 3 个倒数日，一次性购买解锁无限使用。',
         'apps.tickday.tag1':    '桌面小组件',
         'apps.tickday.tag2':    '离线倒数日',
@@ -70,12 +70,12 @@ var I18N = {
         'apps.tickday.link':    'App Store 下载 →',
 
         /* Apps - 墨锁 */
-        'apps.inklock.subname': '私密日记本',
-        'apps.inklock.desc':    '极简私密日记本。独创诱饵密码系统——设置两个独立密码，一个展示预设内容，真实密码解锁完整日记。所有数据纯本地离线存储，不收集任何数据。Georgia 衬线字体、可调字号行距、打字机模式光标居中，一次购买永久使用。',
+        'apps.inklock.subname': '诱饵密码双重保护纯离线存储',
+        'apps.inklock.desc':    '极简私密日记本。独创诱饵密码系统——设置两个独立密码，一个展示预设内容，真实密码解锁完整日记。所有数据纯本地离线存储，不收集任何数据。Georgia 衬线字体、可调字号行距、打字机模式光标居中。永久免费使用。',
         'apps.inklock.tag1':    '诱饵密码',
         'apps.inklock.tag2':    '离线日记',
         'apps.inklock.tag3':    '本地存储',
-        'apps.inklock.tag4':    '买断制',
+        'apps.inklock.tag4':    '免费',
         'apps.inklock.tag5':    '衬线字体',
         'apps.inklock.link':    'App Store 下载 →',
 
@@ -111,7 +111,7 @@ var I18N = {
 
     en: {
         /* Page */
-        'page.title': 'Fandazi Tech | SecBox · Offline Ledger · TickDay · InkLock | Minimalist iOS Tools',
+        'page.title': 'Fandazi Tech | Password Manager · Ledger · Countdown · Private Diary | Minimalist iOS Tools',
 
         /* Nav */
         'nav.about':    'About',
@@ -146,15 +146,15 @@ var I18N = {
         /* Apps */
         'apps.title':          'Our Products',
         'apps.desc':           'Each product embodies our core values: minimalism, offline-first, and security',
-        'apps.secbox.subname': 'Password Vault',
-        'apps.secbox.desc':    'A zero-network, zero-dependency offline password vault. AES-256-GCM military-grade encryption with Face ID / Touch ID biometric unlock. Built-in password generator, category management, encrypted backup & restore. Your passwords never leave your device.',
+        'apps.secbox.subname': 'AES-256 Local Vault — Encrypted Account & ID Storage',
+        'apps.secbox.desc':    'A zero-network, zero-dependency offline password vault. AES-256-GCM military-grade encryption with Face ID / Touch ID biometric unlock. Built-in password generator, category management, encrypted backup & restore. Free for up to 10 passwords, Pro unlocks unlimited + backup & restore. Your passwords never leave your device.',
         'apps.secbox.tag1':    'AES-256-GCM',
         'apps.secbox.tag2':    'Offline Encryption',
         'apps.secbox.tag3':    'Face ID',
         'apps.secbox.tag4':    'Password Generator',
         'apps.secbox.tag5':    '6 Languages',
         'apps.secbox.link':    'Download on App Store →',
-        'apps.ledger.subname': 'Offline Ledger',
+        'apps.ledger.subname': 'No Upload, No Signup, Buy Once, Use Forever',
         'apps.ledger.desc':    'A minimalist offline bookkeeping tool. All data stored locally — no registration required, nothing uploaded. Multi-account management, category statistics, report export. One-time purchase for lifetime use. A ledger that truly belongs to you.',
         'apps.ledger.tag1':    'Offline Ledger',
         'apps.ledger.tag2':    'Local Storage',
@@ -164,7 +164,7 @@ var I18N = {
         'apps.ledger.link':    'Download on App Store →',
 
         /* Apps - TickDay */
-        'apps.tickday.subname': 'Countdown Widget',
+        'apps.tickday.subname': 'Minimalist Anniversary Reminder — Start Free',
         'apps.tickday.desc':    'Count the days that matter. Privately. A minimalist countdown tracker with 100% local storage — no account, no signup, no cloud. Home screen widgets, yearly repeat, and category management. Start free with up to 3 countdowns, unlock unlimited with a one-time purchase.',
         'apps.tickday.tag1':    'Home Widget',
         'apps.tickday.tag2':    'Offline Countdown',
@@ -174,12 +174,12 @@ var I18N = {
         'apps.tickday.link':    'Download on App Store →',
 
         /* Apps - InkLock */
-        'apps.inklock.subname': 'Private Diary',
-        'apps.inklock.desc':    'A minimalist private diary with a unique decoy password system — set two independent passwords, one reveals preset content while the real one unlocks your complete journal. All data stored locally offline with zero data collection. Georgia serif typography, adjustable font size & line spacing, typewriter-mode cursor centering. One-time purchase for lifetime use.',
+        'apps.inklock.subname': 'Decoy Password Dual Protection — Pure Offline Storage',
+        'apps.inklock.desc':    'A minimalist private diary with a unique decoy password system — set two independent passwords, one reveals preset content while the real one unlocks your complete journal. All data stored locally offline with zero data collection. Georgia serif typography, adjustable font size & line spacing, typewriter-mode cursor centering. Free forever.',
         'apps.inklock.tag1':    'Decoy Password',
         'apps.inklock.tag2':    'Offline Diary',
         'apps.inklock.tag3':    'Local Storage',
-        'apps.inklock.tag4':    'One-Time Purchase',
+        'apps.inklock.tag4':    'Free',
         'apps.inklock.tag5':    'Serif Font',
         'apps.inklock.link':    'Download on App Store →',
 
@@ -216,8 +216,8 @@ var I18N = {
 
 /* Meta description for each language */
 var I18N_META = {
-    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：SecBox密码保险箱、不云记账、TickDay倒数日小组件、墨锁私密日记本。AES-256-GCM加密，本地存储，零数据收集。',
-    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: SecBox Password Vault, Offline Ledger, TickDay Countdown Widget, InkLock Private Diary. AES-256-GCM encryption, local storage, zero data collection.'
+    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：密码管理器、记账本、倒数日、私密日记。AES-256-GCM加密，本地存储，零数据收集。',
+    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: Password Manager, Offline Ledger, Countdown Widget, Private Diary. AES-256-GCM encryption, local storage, zero data collection.'
 };
 
 
