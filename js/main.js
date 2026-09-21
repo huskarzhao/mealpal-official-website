@@ -17,7 +17,7 @@ var I18N = {
 
         /* Hero */
         'hero.title':       '把复杂留给代码<br><span class="hero-title-light">把轻松还给用户</span>',
-        'hero.subtitle':    '北京饭搭子网络科技有限公司，专注 iOS 平台极简工具类 App 研发。<br>所有产品<strong>本地离线存储、不收集用户数据</strong>，用买断制交付真正的安心。',
+        'hero.subtitle':    'ZHAOQUANHONG，专注 iOS 平台极简工具类 App 研发。<br>所有产品<strong>本地离线存储、不收集用户数据</strong>，用买断制交付真正的安心。',
         'hero.btn_apps':    '查看产品',
         'hero.btn_about':   '了解我们',
 
@@ -106,7 +106,7 @@ var I18N = {
 
         /* Footer */
         'footer.tagline':   '把复杂留给代码，把轻松还给用户',
-        'footer.copyright': '© 2026 北京饭搭子网络科技有限公司. All rights reserved.'
+        'footer.copyright': '© 2026 ZHAOQUANHONG. All rights reserved.'
     },
 
     en: {
@@ -121,7 +121,7 @@ var I18N = {
 
         /* Hero */
         'hero.title':       'Leave Complexity to Code<br><span class="hero-title-light">Return Simplicity to Users</span>',
-        'hero.subtitle':    'Beijing Fandazi Network Technology Co., Ltd. — crafting minimalist iOS tools.<br>All products feature <strong>local offline storage with zero data collection</strong>, delivered through one-time purchases for true peace of mind.',
+        'hero.subtitle':    'ZHAOQUANHONG — crafting minimalist iOS tools.<br>All products feature <strong>local offline storage with zero data collection</strong>, delivered through one-time purchases for true peace of mind.',
         'hero.btn_apps':    'View Products',
         'hero.btn_about':   'About Us',
 
@@ -210,14 +210,14 @@ var I18N = {
 
         /* Footer */
         'footer.tagline':   'Leave Complexity to Code, Return Simplicity to Users',
-        'footer.copyright': '© 2026 Beijing Fandazi Network Technology Co., Ltd. All rights reserved.'
+        'footer.copyright': '© 2026 ZHAOQUANHONG All rights reserved.'
     }
 };
 
 /* Meta description for each language */
 var I18N_META = {
-    zh: '北京饭搭子网络科技有限公司 - 专注iOS离线隐私工具类App开发。旗下产品：密码管理器、记账本、倒数日、私密日记。AES-256-GCM加密，本地存储，零数据收集。',
-    en: 'Beijing Fandazi Network Technology Co., Ltd. — Crafting offline privacy-first iOS tools. Products: Password Manager, Offline Ledger, Countdown Widget, Private Diary. AES-256-GCM encryption, local storage, zero data collection.'
+    zh: 'ZHAOQUANHONG - 专注iOS离线隐私工具类App开发。旗下产品：密码管理器、记账本、倒数日、私密日记。AES-256-GCM加密，本地存储，零数据收集。',
+    en: 'ZHAOQUANHONG — Crafting offline privacy-first iOS tools. Products: Password Manager, Offline Ledger, Countdown Widget, Private Diary. AES-256-GCM encryption, local storage, zero data collection.'
 };
 
 
