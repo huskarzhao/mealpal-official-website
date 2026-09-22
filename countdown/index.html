@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TickDay 极简倒计时小组件——记录每一个重要日子。100% 本地离线存储、零数据收集、桌面小组件、年度重复提醒。免费开始，一次性买断解锁无限。">
+<title>TickDay — 极简倒计时小组件 · Countdown Widget</title>
+<style>
+  :root {
+    --ink: #111111;
+    --muted: #5f5f5f;
+    --line: #e8e8e8;
+    --accent: #FF4D2E;
+    --bg: #fafafa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Noto Sans SC", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 96px 24px 72px;
+    background:
+      radial-gradient(1000px 500px at 50% -20%, rgba(255,77,46,0.10), transparent 60%),
+      var(--bg);
+  }
+  .icon-badge {
+    width: 84px; height: 84px;
+    border-radius: 22px;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  }
+  .brand {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .hero h1 {
+    font-size: 52px;
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 20px auto 12px;
+    max-width: 720px;
+  }
+  .hero .sub {
+    font-size: 19px;
+    color: var(--muted);
+    max-width: 560px;
+    margin: 0 auto 32px;
+  }
+  .hero .sub-en {
+    font-size: 15px;
+    color: var(--muted);
+    opacity: 0.8;
+    max-width: 560px;
+    margin: -20px auto 32px;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 34px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .cta:hover { background: #000; transform: translateY(-1px); }
+  .hint { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+  /* Sections */
+  section { padding: 64px 0; }
+  section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
+
+  /* Features */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .feature {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 24px;
+  }
+  .feature .icon {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .feature h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+  .feature .en { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+  .feature p { color: var(--muted); font-size: 15px; }
+
+  /* Pricing */
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .plan {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 30px 28px;
+  }
+  .plan.highlight {
+    border-color: var(--accent);
+    box-shadow: 0 8px 30px rgba(255,77,46,0.14);
+  }
+  .plan .name { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .plan .price { font-size: 34px; font-weight: 800; margin: 10px 0 4px; }
+  .plan .price small { font-size: 15px; font-weight: 500; color: var(--muted); }
+  .plan ul { list-style: none; margin: 16px 0 0; }
+  .plan li { padding: 5px 0; font-size: 15px; color: var(--muted); }
+  .plan li::before { content: "✓ "; color: var(--accent); font-weight: 700; }
+  .tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* Bottom CTA */
+  .cta-bottom { text-align: center; padding: 72px 24px; }
+  .cta-bottom p { color: var(--muted); margin-bottom: 28px; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <img class="icon-badge" src="../assets/tickday-icon.jpg" alt="TickDay 图标">
+    <div class="brand">TickDay</div>
+    <h1>记录每一个<br>重要日子</h1>
+    <p class="sub">极简离线倒计时小组件。生日、纪念日、考试、旅行——把每一个重要日子放在桌面，一眼看清还剩多少天。</p>
+    <p class="sub-en">A minimal offline countdown widget. Track birthdays, anniversaries, exams & trips — see exactly how many days remain, right on your home screen.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6786533088">在 App Store 下载</a>
+    <p class="hint">免费开始 · 纯离线 · 无需注册 · 零数据收集</p>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>为什么选择 TickDay</h2>
+      <p class="section-sub">Everything you need, nothing you don't.</p>
+      <div class="grid">
+        <div class="feature">
+          <div class="icon">📱</div>
+          <h3>桌面小组件</h3>
+          <div class="en">Home screen & lock screen widgets</div>
+          <p>多种尺寸小组件，锁屏与桌面都能显示倒计时，无需打开 App 即可查看。</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔒</div>
+          <h3>100% 离线</h3>
+          <div class="en">100% offline · zero data collection</div>
+          <p>所有数据仅存储在您的设备本地，不收集、不上传、不追踪任何信息。</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔁</div>
+          <h3>年度重复提醒</h3>
+          <div class="en">Yearly repeat</div>
+          <p>生日、纪念日每年自动重复，支持提前提醒，再也不会错过重要时刻。</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🎨</div>
+          <h3>极简个性化</h3>
+          <div class="en">57 icons · 18 colors</div>
+          <p>黑白极简设计，57 个图标与 18 种配色，让每一个倒计时都独一无二。</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔔</div>
+          <h3>智能提醒</h3>
+          <div class="en">Smart notifications</div>
+          <p>提前 N 天提醒重要日子，自由设定提醒时间，从容准备每一件事。</p>
+        </div>
+        <div class="feature">
+          <div class="icon">♾️</div>
+          <h3>一次性买断</h3>
+          <div class="en">Pay once, own forever</div>
+          <p>无订阅、无隐藏费用。一次购买终身使用，永久解锁全部功能。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <h2>价格</h2>
+      <p class="section-sub">简单透明 · 一次买断 · 永久使用</p>
+      <div class="plans">
+        <div class="plan">
+          <div class="name">免费版</div>
+          <div class="price">¥0</div>
+          <ul>
+            <li>添加 3 个倒计时</li>
+            <li>全部核心功能</li>
+            <li>桌面小组件</li>
+          </ul>
+        </div>
+        <div class="plan highlight">
+          <span class="tag">Lifetime</span>
+          <div class="name">Pro</div>
+          <div class="price">一次性<small>买断</small></div>
+          <ul>
+            <li>无限添加倒计时</li>
+            <li>全部图标与配色</li>
+            <li>高级小组件主题</li>
+            <li>无广告 · 永久使用</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-bottom">
+    <div class="wrap">
+      <h2>开始记录重要日子</h2>
+      <p>Your next important day is one tap away.</p>
+      <a class="cta" href="https://apps.apple.com/app/id6786533088">在 App Store 下载</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      © 2026 ZHAOQUANHONG · TickDay ·
+      <a href="privacy.html">隐私政策 Privacy</a> ·
+      <a href="techsupport.html">技术支持 Support</a> ·
+      <a href="mailto:support@mealpal.cn">联系我们 Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
